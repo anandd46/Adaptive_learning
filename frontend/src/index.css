@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Styles ─────────────────────────────────────────────────────── */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-950 text-slate-100 font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-600;
+  }
+}
+
+/* ─── Component Utilities ─────────────────────────────────────────────── */
+@layer components {
+  /* Cards */
+  .card {
+    @apply bg-surface-900 border border-surface-700/50 rounded-2xl p-6 shadow-lg shadow-black/20;
+  }
+
+  .card-sm {
+    @apply bg-surface-900 border border-surface-700/50 rounded-xl p-4 shadow-md shadow-black/20;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-200 hover:border-primary-500/50 hover:shadow-primary-500/10 hover:shadow-xl cursor-pointer;
+  }
+
+  /* Glass morphism */
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-500 active:bg-primary-700 text-white font-medium px-4 py-2 rounded-xl transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-surface-900 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-surface-800 hover:bg-surface-700 text-slate-200 font-medium px-4 py-2 rounded-xl border border-surface-600/50 transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-surface-900;
+  }
+
+  .btn-ghost {
+    @apply text-slate-400 hover:text-slate-200 hover:bg-surface-800 font-medium px-4 py-2 rounded-xl transition-all duration-150 focus:outline-none;
+  }
+
+  .btn-danger {
+    @apply bg-danger-600 hover:bg-danger-500 text-white font-medium px-4 py-2 rounded-xl transition-all duration-150;
+  }
+
+  /* Form inputs */
+  .input {
+    @apply bg-surface-800 border border-surface-600/50 text-slate-100 placeholder-slate-500 rounded-xl px-4 py-2.5 w-full transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+
+  .label {
+    @apply text-sm font-medium text-slate-300 mb-1.5 block;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary-500/20 text-primary-300 border border-primary-500/30;
+  }
+
+  .badge-success {
+    @apply badge bg-accent-500/20 text-accent-300 border border-accent-500/30;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning-500/20 text-warning-300 border border-warning-500/30;
+  }
+
+  .badge-danger {
+    @apply badge bg-danger-500/20 text-danger-300 border border-danger-500/30;
+  }
+
+  /* Progress bars */
+  .progress-bar {
+    @apply w-full bg-surface-700 rounded-full overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full rounded-full transition-all duration-500 ease-out;
+  }
+
+  /* Mastery colors */
+  .mastery-strong { @apply text-accent-400; }
+  .mastery-moderate { @apply text-warning-400; }
+  .mastery-weak { @apply text-danger-400; }
+  .mastery-locked { @apply text-slate-500; }
+
+  /* Sidebar nav items */
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2 rounded-xl text-slate-400 hover:text-slate-100 hover:bg-surface-800 transition-all duration-150 text-sm font-medium;
+  }
+
+  .nav-item.active {
+    @apply bg-primary-600/20 text-primary-300 border border-primary-500/30;
+  }
+
+  /* Section headers */
+  .section-title {
+    @apply text-lg font-semibold text-slate-100;
+  }
+
+  .section-subtitle {
+    @apply text-sm text-slate-400 mt-0.5;
+  }
+}
+
+/* ─── Animations ──────────────────────────────────────────────────────── */
+@layer utilities {
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from { box-shadow: 0 0 10px rgba(99, 102, 241, 0.3); }
+    to { box-shadow: 0 0 20px rgba(99, 102, 241, 0.6); }
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent;
+  }
+
+  .border-gradient {
+    border-image: linear-gradient(135deg, #6366f1, #10b981) 1;
+  }
+}
