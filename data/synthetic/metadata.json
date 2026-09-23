@@ -1,0 +1,12 @@
+{
+  "type": "SYNTHETIC",
+  "label": "SYNTHETIC \u2014 NOT FOR RESEARCH CONCLUSIONS",
+  "version": "DEMO-v2.0",
+  "generated_at": "2026-09-21T16:58:00.799178+00:00",
+  "seed": 42,
+  "n_students": 30,
+  "n_topics": 10,
+  "n_quiz_attempts": 1079,
+  "n_events": 5058,
+  "n_feature_records": 300
+}

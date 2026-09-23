@@ -1,0 +1,2102 @@
+[
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Control Flow",
+    "mastery_score": 0.371,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Functions",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Recursion",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "File I/O",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.358,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Error Handling",
+    "mastery_score": 0.341,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ccbe2089-525f-4d71-bed6-639e4684695e",
+    "topic": "Data Structures",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.134,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Control Flow",
+    "mastery_score": 0.27,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Functions",
+    "mastery_score": 0.141,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Recursion",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "File I/O",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Error Handling",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.076,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "1d85bbd5-eeb9-439a-b0f8-0e3e00dff437",
+    "topic": "Data Structures",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.949,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Control Flow",
+    "mastery_score": 0.854,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Functions",
+    "mastery_score": 0.904,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.627,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Recursion",
+    "mastery_score": 0.88,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "File I/O",
+    "mastery_score": 0.709,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.664,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Error Handling",
+    "mastery_score": 0.681,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.832,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d4505fc3-a2d5-43bf-8ba8-fbeb2d36d845",
+    "topic": "Data Structures",
+    "mastery_score": 0.874,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.51,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Control Flow",
+    "mastery_score": 0.808,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Functions",
+    "mastery_score": 0.427,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.161,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Recursion",
+    "mastery_score": 0.238,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "File I/O",
+    "mastery_score": 0.211,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.159,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Error Handling",
+    "mastery_score": 0.296,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.331,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cdf9a6a3-64f9-439b-b301-f5e7725f27bc",
+    "topic": "Data Structures",
+    "mastery_score": 0.156,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.511,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Control Flow",
+    "mastery_score": 0.804,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Functions",
+    "mastery_score": 0.501,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.58,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Recursion",
+    "mastery_score": 0.546,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "File I/O",
+    "mastery_score": 0.521,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.454,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Error Handling",
+    "mastery_score": 0.35,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.39,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "4ac167a1-3214-4e8e-9926-655e316a6ac6",
+    "topic": "Data Structures",
+    "mastery_score": 0.378,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.116,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Control Flow",
+    "mastery_score": 0.113,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Functions",
+    "mastery_score": 0.179,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.147,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Recursion",
+    "mastery_score": 0.211,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "File I/O",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Error Handling",
+    "mastery_score": 0.068,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.215,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a1d07510-fa8b-4233-b1ac-19863ae2a31c",
+    "topic": "Data Structures",
+    "mastery_score": 0.066,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.224,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Control Flow",
+    "mastery_score": 0.19,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Functions",
+    "mastery_score": 0.51,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.213,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Recursion",
+    "mastery_score": 0.094,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "File I/O",
+    "mastery_score": 0.105,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Error Handling",
+    "mastery_score": 0.292,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.277,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "e063b6ce-4a47-47a4-9f27-9780d6fd49b9",
+    "topic": "Data Structures",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.801,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Control Flow",
+    "mastery_score": 0.765,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Functions",
+    "mastery_score": 0.482,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.222,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Recursion",
+    "mastery_score": 0.456,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "File I/O",
+    "mastery_score": 0.522,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.263,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Error Handling",
+    "mastery_score": 0.519,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.472,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "7d0b4b50-c8f0-4719-836e-4c0716708079",
+    "topic": "Data Structures",
+    "mastery_score": 0.598,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.2,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Control Flow",
+    "mastery_score": 0.485,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Functions",
+    "mastery_score": 0.49,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.165,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Recursion",
+    "mastery_score": 0.253,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "File I/O",
+    "mastery_score": 0.152,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Error Handling",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "319468ae-279a-4039-8403-f2bc9092603f",
+    "topic": "Data Structures",
+    "mastery_score": 0.054,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.595,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Control Flow",
+    "mastery_score": 0.715,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Functions",
+    "mastery_score": 0.557,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.297,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Recursion",
+    "mastery_score": 0.547,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "File I/O",
+    "mastery_score": 0.717,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.562,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Error Handling",
+    "mastery_score": 0.54,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.531,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ab9d620c-a11a-45bb-a091-25712f05e777",
+    "topic": "Data Structures",
+    "mastery_score": 0.556,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.463,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Control Flow",
+    "mastery_score": 0.296,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Functions",
+    "mastery_score": 0.23,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.163,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Recursion",
+    "mastery_score": 0.368,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "File I/O",
+    "mastery_score": 0.135,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.122,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Error Handling",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.315,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "53274667-ed0b-4b75-984c-efda4fb96316",
+    "topic": "Data Structures",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.551,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Control Flow",
+    "mastery_score": 0.779,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Functions",
+    "mastery_score": 0.915,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.649,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Recursion",
+    "mastery_score": 0.838,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "File I/O",
+    "mastery_score": 0.69,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.446,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Error Handling",
+    "mastery_score": 0.7,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.754,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "baf3a263-fef3-4fce-bb8e-8b193d022fa1",
+    "topic": "Data Structures",
+    "mastery_score": 0.55,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.765,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Control Flow",
+    "mastery_score": 0.555,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Functions",
+    "mastery_score": 0.814,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.829,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Recursion",
+    "mastery_score": 0.707,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "File I/O",
+    "mastery_score": 0.29,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.518,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Error Handling",
+    "mastery_score": 0.222,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.543,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6e4bbb8f-44c0-4924-8217-86c7dcb06579",
+    "topic": "Data Structures",
+    "mastery_score": 0.851,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.731,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Control Flow",
+    "mastery_score": 0.459,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Functions",
+    "mastery_score": 0.428,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.496,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Recursion",
+    "mastery_score": 0.419,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "File I/O",
+    "mastery_score": 0.328,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.281,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Error Handling",
+    "mastery_score": 0.38,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.617,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "214ee585-e09a-47a7-b154-3c0bc5356779",
+    "topic": "Data Structures",
+    "mastery_score": 0.428,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.983,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Control Flow",
+    "mastery_score": 0.838,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Functions",
+    "mastery_score": 0.914,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.576,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Recursion",
+    "mastery_score": 0.53,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "File I/O",
+    "mastery_score": 0.483,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.434,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Error Handling",
+    "mastery_score": 0.852,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.661,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d3097b88-6d18-40e6-9980-8da2b42f1ae3",
+    "topic": "Data Structures",
+    "mastery_score": 0.741,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.279,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Control Flow",
+    "mastery_score": 0.19,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Functions",
+    "mastery_score": 0.186,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.259,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Recursion",
+    "mastery_score": 0.114,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "File I/O",
+    "mastery_score": 0.194,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Error Handling",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.139,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a09c4bbd-a1a2-4cbf-b6bb-70ff8d01c587",
+    "topic": "Data Structures",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.968,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Control Flow",
+    "mastery_score": 0.688,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Functions",
+    "mastery_score": 0.99,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.883,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Recursion",
+    "mastery_score": 0.497,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "File I/O",
+    "mastery_score": 0.796,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.762,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Error Handling",
+    "mastery_score": 0.804,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.828,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6917cbd5-20b8-473b-8356-da152c30ebc1",
+    "topic": "Data Structures",
+    "mastery_score": 0.528,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.837,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Control Flow",
+    "mastery_score": 0.958,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Functions",
+    "mastery_score": 0.787,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.691,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Recursion",
+    "mastery_score": 0.756,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "File I/O",
+    "mastery_score": 0.726,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.575,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Error Handling",
+    "mastery_score": 0.843,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.965,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ff71f8af-78b8-429d-bf4c-9726fe0ab4d3",
+    "topic": "Data Structures",
+    "mastery_score": 0.807,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.714,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Control Flow",
+    "mastery_score": 0.746,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Functions",
+    "mastery_score": 0.87,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.943,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Recursion",
+    "mastery_score": 0.599,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "File I/O",
+    "mastery_score": 0.667,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.888,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Error Handling",
+    "mastery_score": 0.766,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.717,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "d39b6a48-eec9-408c-9519-a9f12fd4c28c",
+    "topic": "Data Structures",
+    "mastery_score": 0.833,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.762,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Control Flow",
+    "mastery_score": 0.809,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Functions",
+    "mastery_score": 0.679,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.504,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Recursion",
+    "mastery_score": 0.482,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "File I/O",
+    "mastery_score": 0.788,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.446,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Error Handling",
+    "mastery_score": 0.54,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.631,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "b4c9de1d-d601-41e9-b971-aec375e29db4",
+    "topic": "Data Structures",
+    "mastery_score": 0.263,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.607,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Control Flow",
+    "mastery_score": 0.452,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Functions",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Recursion",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "File I/O",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Error Handling",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.293,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "ba6adab9-ec07-41a4-951f-f6fb69df36d0",
+    "topic": "Data Structures",
+    "mastery_score": 0.502,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Control Flow",
+    "mastery_score": 0.467,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Functions",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.473,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Recursion",
+    "mastery_score": 0.35,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "File I/O",
+    "mastery_score": 0.722,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.2,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Error Handling",
+    "mastery_score": 0.371,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "218877e6-db09-4538-a5e4-343bcc2e3218",
+    "topic": "Data Structures",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.729,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Control Flow",
+    "mastery_score": 0.535,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Functions",
+    "mastery_score": 0.572,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.686,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Recursion",
+    "mastery_score": 0.659,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "File I/O",
+    "mastery_score": 0.612,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.709,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Error Handling",
+    "mastery_score": 0.694,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.624,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "bccbe516-fdaf-4490-9388-63da7426b136",
+    "topic": "Data Structures",
+    "mastery_score": 0.689,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.568,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Control Flow",
+    "mastery_score": 0.772,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Functions",
+    "mastery_score": 0.954,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.743,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Recursion",
+    "mastery_score": 0.891,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "File I/O",
+    "mastery_score": 0.871,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.611,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Error Handling",
+    "mastery_score": 0.722,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.66,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "a5d51721-1652-422c-9ade-83b0352ec5dc",
+    "topic": "Data Structures",
+    "mastery_score": 0.215,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Control Flow",
+    "mastery_score": 0.801,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Functions",
+    "mastery_score": 0.99,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Recursion",
+    "mastery_score": 0.551,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "File I/O",
+    "mastery_score": 0.625,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.8,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Error Handling",
+    "mastery_score": 0.3,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.299,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "6ab0b79d-8329-457b-b7dd-074958cfd1e5",
+    "topic": "Data Structures",
+    "mastery_score": 0.298,
+    "archetype": "inconsistent_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Control Flow",
+    "mastery_score": 0.228,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Functions",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.159,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Recursion",
+    "mastery_score": 0.166,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "File I/O",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Error Handling",
+    "mastery_score": 0.05,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.119,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "75fc3c1e-8bd3-463d-82ce-77ccfa77faf5",
+    "topic": "Data Structures",
+    "mastery_score": 0.094,
+    "archetype": "at_risk_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.238,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Control Flow",
+    "mastery_score": 0.371,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Functions",
+    "mastery_score": 0.462,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.145,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Recursion",
+    "mastery_score": 0.217,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "File I/O",
+    "mastery_score": 0.143,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.096,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Error Handling",
+    "mastery_score": 0.213,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.124,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "cfd8b685-1ef7-4d47-be57-d866eab2b750",
+    "topic": "Data Structures",
+    "mastery_score": 0.05,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.452,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Control Flow",
+    "mastery_score": 0.547,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Functions",
+    "mastery_score": 0.692,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.4,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Recursion",
+    "mastery_score": 0.359,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "File I/O",
+    "mastery_score": 0.44,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.272,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Error Handling",
+    "mastery_score": 0.255,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.52,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "3541a917-9546-4dab-bda6-24e2cd62a6eb",
+    "topic": "Data Structures",
+    "mastery_score": 0.346,
+    "archetype": "steady_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.117,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Control Flow",
+    "mastery_score": 0.149,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Functions",
+    "mastery_score": 0.103,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.198,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Recursion",
+    "mastery_score": 0.351,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "File I/O",
+    "mastery_score": 0.144,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.079,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Error Handling",
+    "mastery_score": 0.243,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.385,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "8afd1d55-0488-4d9f-971d-4fb19afb0343",
+    "topic": "Data Structures",
+    "mastery_score": 0.139,
+    "archetype": "struggling_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Variables & Data Types",
+    "mastery_score": 0.99,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Control Flow",
+    "mastery_score": 0.945,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Functions",
+    "mastery_score": 0.875,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Lists & Dictionaries",
+    "mastery_score": 0.806,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Recursion",
+    "mastery_score": 0.773,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "File I/O",
+    "mastery_score": 0.676,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Object-Oriented Programming",
+    "mastery_score": 0.531,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Error Handling",
+    "mastery_score": 0.86,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Modules & Packages",
+    "mastery_score": 0.99,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  },
+  {
+    "student_id": "f57424b3-61f4-47e0-a45e-5049b71863b7",
+    "topic": "Data Structures",
+    "mastery_score": 0.759,
+    "archetype": "fast_learner",
+    "_synthetic": "DEMO-v2.0"
+  }
+]

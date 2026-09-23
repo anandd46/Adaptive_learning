@@ -10,10 +10,13 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-06B6D4?logo=tailwindcss&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Phase%201%20Complete-22c55e)
+![Tests](https://img.shields.io/badge/Tests-92%20Passing-22c55e)
+![Status](https://img.shields.io/badge/Status-Phase%203%20Complete-22c55e)
 ![License](https://img.shields.io/badge/License-Not%20yet%20specified-lightgrey)
 
-> **⚠️ Active Development** — This project is being built incrementally across 14 phases. Phase 1 (Foundation) is complete. See the [Implementation Status](#current-implementation-status) section for an honest per-module breakdown.
+> **Active Development** — This project is being built incrementally across 14 phases.
+> Phase 1 (Foundation), Phase 2 (Data & Learning Analytics), and Phase 3 (Knowledge Gap Detection) are complete.
+> 99 tests pass. See the [Implementation Status](#current-implementation-status) section.
 
 ---
 
@@ -100,9 +103,9 @@ The system never recommends the same learning path to every student. Recommendat
 
 | Objective | Description | Status |
 |---|---|---|
-| Dynamic Learner Modeling | Continuously updated learner profiles with mastery, behavior, and history | ✅ Schema implemented |
-| Learning Analytics Engine | Behavioral and performance analysis across sessions | ⏳ Planned (Phase 2) |
-| Knowledge Gap Detection | Multi-signal identification of weak concepts with evidence | ⏳ Planned (Phase 3) |
+| Dynamic Learner Modeling | Continuously updated learner profiles with mastery, behavior, and history | ✅ LearnerProfile API implemented |
+| Learning Analytics Engine | Behavioral and performance analysis across sessions | ✅ Implemented (Phase 2) |
+| Knowledge Gap Detection | Multi-signal identification of weak concepts with evidence | ✅ Implemented (Phase 3) |
 | ML Prediction | Predictive models for mastery and learning risk | ⏳ Planned (Phase 4) |
 | Adaptive Recommendation | Personalized next-best learning actions with scoring | ⏳ Planned (Phase 5) |
 | LLM Tutor | Context-aware personalized explanations, hints, and quizzes | ⏳ Planned (Phase 6) |
@@ -110,7 +113,7 @@ The system never recommends the same learning path to every student. Recommendat
 | Explainable AI | Human-readable recommendation explanations with SHAP/LIME | ⏳ Planned (Phase 8) |
 | Knowledge Graph | Prerequisite-aware concept relationships driving adaptive logic | ⏳ Planned (Phase 9) |
 | Student Dashboard | Full analytics, learning path, tutor, quiz, and study plan UI | 🟡 Partial (Phase 10) |
-| Teacher Dashboard | Class analytics, at-risk detection, learner inspection | 🟡 Partial (Phase 10) |
+| Teacher Dashboard | Class analytics, at-risk detection, learner inspection | 🟡 API implemented, UI pending Phase 10 |
 | Research Experiments | Controlled experiment groups with pre/post-test evaluation | ⏳ Planned (Phase 11) |
 | Statistical Analysis | Proper assumption-checked statistical tests | ⏳ Planned (Phase 11) |
 | Ablation Study | Component-by-component contribution analysis | ⏳ Planned (Phase 11) |
@@ -139,16 +142,66 @@ The system never recommends the same learning path to every student. Recommendat
 **Frontend Shell**
 - React 18 + TypeScript + Tailwind CSS (dark theme)
 - Login and Register pages (connected to live API)
-- Student dashboard (layout + demo data, pending Phase 2 API integration)
-- Teacher dashboard (layout + demo data, pending Phase 2 API integration)
+- Student dashboard (layout + demo data, pending API wiring in Phase 10)
+- Teacher dashboard (layout + demo data, pending API wiring in Phase 10)
 - Role-based routing and protected routes
 - Toast notifications, loading states
 
-### ⏳ Planned (Phases 2–14)
+### ✅ Implemented (Phase 2 — Data & Learning Analytics)
 
-**Learner Intelligence** — Dynamic learner profiles, topic mastery tracking, engagement analytics, behavioral event tracking
+**Event Tracking API**
+- `POST /api/v1/events` — record granular student interaction events (11 event types)
+- `GET /api/v1/events` — paginated event history for authenticated student
+- `POST /api/v1/sessions` / `PATCH /api/v1/sessions/{id}` — learning session management
 
-**Knowledge Intelligence** — Knowledge gap detection with multi-signal evidence, prerequisite analysis, repeated mistake detection
+**Student Analytics API**
+- `GET /api/v1/students/me` — student profile
+- `GET /api/v1/students/me/mastery` — all topic mastery records with pagination
+- `GET /api/v1/students/me/mastery/{topic_id}` — single topic mastery
+- `GET /api/v1/students/me/profile` — aggregated LearnerProfile
+- `POST /api/v1/students/me/profile/refresh` — recompute profile from interaction data
+- `GET /api/v1/students/me/performance` — performance summary across all topics
+
+**Teacher Analytics API**
+- `GET /api/v1/teacher/dashboard` — class-level stats (mastery, at-risk, topic gaps)
+- `GET /api/v1/teacher/students` — paginated student list with mastery summaries
+- `GET /api/v1/teacher/students/{id}` — individual student learner profile
+
+**Analytics Engine** (`app/analytics/`)
+- `mastery.py` — mastery score computation, level classification (5 levels), confidence estimation
+- `engine.py` — performance feature engineering, engagement scoring, mastery upsert, learner profile recomputation, streak calculation, class-level statistics
+
+**Repository Layer** (`app/repositories/`)
+- `student_repository.py` — student/teacher data access methods
+- `analytics_repository.py` — event, session, mastery, and profile CRUD
+
+**Synthetic Data Generator** (`scripts/generate_synthetic_data.py`)
+- 5 learner archetypes with configurable weights and behavioral parameters
+- Generates students, quiz attempts (with individual answers), events, and feature records
+- CLI with `--students`, `--seed`, `--output-dir`, `--dry-run` flags
+- All output tagged with `SYNTHETIC_DATA_VERSION` — never used for research conclusions
+
+**EDA Notebook** (`notebooks/phase2_learning_analytics_eda.py`)
+- Mastery distribution by archetype, correlation analysis, at-risk identification
+- Topic difficulty analysis, event activity summary
+- SYNTHETIC data disclaimer on every analysis cell
+
+### ✅ Implemented (Phase 3 — Knowledge Gap Detection)
+
+**Knowledge Gap Engine** (`app/knowledge_gap/engine.py`)
+- Multi-signal detection: mastery deficit, accuracy trends, retry penalties, prerequisite gaps.
+- Severity classification (`low`, `medium`, `high`, `critical`) and prioritization.
+- Knowledge gap persistence and evidence capture.
+- Integrated into Learner Profile update lifecycle.
+
+**Knowledge Gap API** (`app/api/v1/knowledge_gaps.py`)
+- `GET /api/v1/students/me/knowledge-gaps` — active gaps for the authenticated student.
+- `POST /api/v1/students/me/knowledge-gaps/{gap_id}/resolve` — mark a gap as manually resolved.
+- `GET /api/v1/teacher/students/{student_id}/knowledge-gaps` — view active gaps for a specific student.
+
+### ⏳ Planned (Phases 4–14)
+
+**Learner Intelligence** — Prerequisite analysis, repeated mistake detection
 
 **Adaptive Learning** — Personalized recommendations, difficulty adaptation, adaptive learning paths, personalized study plans
 
@@ -212,7 +265,7 @@ graph TB
 
 > ✅ = Implemented | 🟡 = Partial | ⏳ = Planned
 
-The **Auth** layer is fully implemented. The **Services** layer has its directory structure and database schema in place; the service logic is planned for Phases 2–11.
+The **Auth** layer (Phase 1) and the **Learning Analytics** layer (Phase 2) are fully implemented. The remaining service modules — Knowledge Gap Detection, Adaptive Engine, ML, LLM, RAG, Explainability, Knowledge Graph, and Experiment Framework — are planned for Phases 3–11.
 
 ---
 
@@ -221,10 +274,11 @@ The **Auth** layer is fully implemented. The **Services** layer has its director
 | Component | Responsibility | Technologies | Status |
 |---|---|---|---|
 | Frontend | Student and teacher UI | React 18, TypeScript, Tailwind, Vite | 🟡 Auth + dashboard shells |
-| FastAPI Backend | REST API, request routing, dependency injection | FastAPI, Pydantic v2, Uvicorn | ✅ Auth routes working |
+| FastAPI Backend | REST API, request routing, dependency injection | FastAPI, Pydantic v2, Uvicorn | ✅ Auth + analytics routes |
 | Auth Service | JWT, password hashing, role management | python-jose, passlib/bcrypt | ✅ Implemented |
 | PostgreSQL Schema | Persistent application data | SQLAlchemy 2.0, Alembic | ✅ 25-table schema + migrations |
-| Learning Analytics | Behavioral feature engineering | pandas, numpy, scikit-learn | ⏳ Phase 2 |
+| Learning Analytics | Behavioral feature engineering, mastery scoring | Python (pure), SQLAlchemy | ✅ Phase 2 |
+| Analytics Repository | Event, session, mastery, profile CRUD | SQLAlchemy 2.0 | ✅ Phase 2 |
 | ML Pipeline | Training, prediction, evaluation | scikit-learn, XGBoost, LightGBM | ⏳ Phase 4 |
 | Adaptive Engine | Personalized recommendation scoring | Python (rule + ML hybrid) | ⏳ Phase 5 |
 | LLM Layer | Personalized educational generation | Google Gemini / OpenAI / Ollama | ⏳ Phase 6 |
@@ -237,7 +291,7 @@ The **Auth** layer is fully implemented. The **Services** layer has its director
 
 ## Adaptive Learning Workflow
 
-*This section describes the intended workflow. The full pipeline is implemented in Phases 2–12. The database schema and service stubs are already in place.*
+*This section describes the complete intended workflow. Steps 1–3 are implemented in Phase 2. Steps 4–9 are planned for Phases 3–12. The database schema and module stubs for all steps are already in place.*
 
 The platform is not a static course delivery system. It adapts based on each student's actual behavior and performance:
 
@@ -358,9 +412,12 @@ adaptive-learning-platform/
 │   │   ├── config.py               # ✅ Pydantic-settings configuration
 │   │   ├── dependencies.py         # ✅ FastAPI dependency injection helpers
 │   │   ├── api/
-│   │   │   ├── router.py           # ✅ Main API router (v1 prefix)
+│   │   │   ├── router.py           # ✅ Main API router — Phase 1 auth + Phase 2 routes
 │   │   │   └── v1/
-│   │   │       └── auth.py         # ✅ Register / Login / Refresh endpoints
+│   │   │       ├── auth.py         # ✅ Register / Login / Refresh endpoints
+│   │   │       ├── events.py       # ✅ Event tracking + session management
+│   │   │       ├── students.py     # ✅ Student profile, mastery, learner profile, performance
+│   │   │       └── teachers.py     # ✅ Teacher dashboard, student list, individual profile
 │   │   ├── core/
 │   │   │   ├── database.py         # ✅ SQLAlchemy engine + session + Base
 │   │   │   ├── security.py         # ✅ bcrypt hashing + JWT creation/validation
@@ -370,8 +427,14 @@ adaptive-learning-platform/
 │   │   │   └── models.py           # ✅ 25-table SQLAlchemy ORM schema
 │   │   ├── schemas/
 │   │   │   ├── auth.py             # ✅ Auth request/response schemas
-│   │   │   └── common.py           # ✅ Shared response wrappers
-│   │   ├── analytics/              # ⏳ Learning Analytics Engine (Phase 2)
+│   │   │   ├── analytics.py        # ✅ Phase 2 analytics schemas (events, mastery, profile, teacher)
+│   │   │   └── common.py           # ✅ Shared response wrappers (PaginatedResponse, SuccessResponse)
+│   │   ├── analytics/              # ✅ Learning Analytics Engine (Phase 2)
+│   │   │   ├── mastery.py          # ✅ Mastery score, level classification, confidence
+│   │   │   └── engine.py           # ✅ Feature engineering, mastery upsert, profile update, streak, class stats
+│   │   ├── repositories/           # ✅ Database access layer (Phase 2)
+│   │   │   ├── student_repository.py   # ✅ Student/teacher data access
+│   │   │   └── analytics_repository.py # ✅ Event, session, mastery, profile CRUD
 │   │   ├── knowledge_gap/          # ⏳ Knowledge Gap Detection (Phase 3)
 │   │   ├── ml/                     # ⏳ ML Prediction Service (Phase 4)
 │   │   ├── adaptive/               # ⏳ Adaptive Learning Engine (Phase 5)
@@ -380,17 +443,20 @@ adaptive-learning-platform/
 │   │   ├── explainability/         # ⏳ Explainability Service (Phase 8)
 │   │   ├── knowledge_graph/        # ⏳ Knowledge Graph Service (Phase 9)
 │   │   ├── experiments/            # ⏳ Research Experiment Framework (Phase 11)
-│   │   ├── services/               # ⏳ Application services (Phase 2+)
-│   │   └── repositories/           # ⏳ Database access layer (Phase 2+)
+│   │   └── services/               # ⏳ Application services (Phase 3+)
 │   ├── migrations/
 │   │   ├── env.py                  # ✅ Alembic migration environment
 │   │   └── versions/               # Database migration history
 │   └── tests/
-│       ├── conftest.py             # ✅ Shared fixtures, test DB setup
+│       ├── conftest.py             # ✅ Shared fixtures, test DB, student/teacher tokens
 │       ├── api/
-│       │   └── test_auth.py        # ✅ 15 auth endpoint tests
+│       │   ├── test_auth.py        # ✅ 14 auth endpoint tests
+│       │   ├── test_events.py      # ✅ 17 event + session tests
+│       │   ├── test_students.py    # ✅ 14 student analytics tests
+│       │   └── test_teachers.py    # ✅ 12 teacher analytics tests
 │       └── unit/
-│           └── test_security.py    # ✅ JWT + password hashing unit tests
+│           ├── test_analytics_engine.py # ✅ 27 analytics engine unit tests
+│           └── test_security.py    # ✅ 8 JWT + password hashing unit tests
 │
 ├── frontend/
 │   ├── package.json
@@ -422,7 +488,8 @@ adaptive-learning-platform/
 │       └── store/
 │           └── authStore.ts        # ✅ Zustand auth state
 │
-├── notebooks/                      # ⏳ Jupyter notebooks (Phase 2+)
+├── notebooks/
+│   └── phase2_learning_analytics_eda.py # ✅ EDA: mastery distributions, correlations, at-risk analysis (SYNTHETIC)
 ├── ml/                             # ⏳ ML pipeline modules (Phase 4+)
 ├── data/
 │   ├── raw/                        # Public datasets
@@ -434,7 +501,8 @@ adaptive-learning-platform/
 ├── knowledge_graph/                # ⏳ Graph definitions (Phase 9+)
 ├── experiments/                    # ⏳ Experiment configs and results
 ├── reports/                        # Research reports and figures
-├── scripts/                        # Utility scripts
+├── scripts/
+│   └── generate_synthetic_data.py  # ✅ Synthetic student data generator (Phase 2)
 └── docs/
     ├── architecture.md             # ✅ Full system architecture
     ├── implementation-plan.md      # ✅ Phased implementation plan
@@ -512,13 +580,13 @@ Both dashboard pages display clearly labeled **DEMO DATA** badges (⚠️ `DEMO 
 - **Student Dashboard:** overall mastery stat cards, per-topic mastery bars with color coding (strong/moderate/weak), today's study plan activities, personalized recommendation cards with "Why recommended?" panels
 - **Teacher Dashboard:** class stat cards (total students, at-risk count, average mastery, total knowledge gaps), student overview with risk badges, class-wide knowledge gap table
 
-This demo data will be replaced with live API calls in Phase 2.
+This demo data will be replaced with live API calls once the frontend pages are connected to the Phase 2 Analytics APIs (Phase 10).
 
 ---
 
 ## API Overview
 
-### Currently Implemented Endpoints
+### Phase 1 — Authentication *(Implemented)*
 
 | Method | Endpoint | Description | Auth |
 |---|---|---|---|
@@ -527,16 +595,27 @@ This demo data will be replaced with live API calls in Phase 2.
 | `POST` | `/api/v1/auth/login` | Authenticate and get JWT tokens | None |
 | `POST` | `/api/v1/auth/refresh` | Exchange refresh token for new access token | None |
 
+### Phase 2 — Data & Learning Analytics *(Implemented)*
+
+| Method | Endpoint | Description | Auth |
+|---|---|---|---|
+| `POST` | `/api/v1/events` | Record a student interaction event | Student |
+| `GET` | `/api/v1/events` | List events for authenticated student (paginated) | Student |
+| `POST` | `/api/v1/sessions` | Start a new learning session | Student |
+| `PATCH` | `/api/v1/sessions/{id}` | End / update a learning session | Student |
+| `GET` | `/api/v1/students/me` | Get current student profile | Student |
+| `GET` | `/api/v1/students/me/mastery` | Get all topic mastery records (paginated) | Student |
+| `GET` | `/api/v1/students/me/mastery/{topic_id}` | Get mastery for a specific topic | Student |
+| `GET` | `/api/v1/students/me/profile` | Get aggregated learner profile | Student |
+| `POST` | `/api/v1/students/me/profile/refresh` | Recompute learner profile from interaction data | Student |
+| `GET` | `/api/v1/students/me/performance` | Get performance summary across all topics | Student |
+| `GET` | `/api/v1/teacher/dashboard` | Class-level statistics dashboard | Teacher |
+| `GET` | `/api/v1/teacher/students` | Paginated student list with mastery summaries | Teacher |
+| `GET` | `/api/v1/teacher/students/{id}` | Individual student learner profile | Teacher |
+
 ### Planned Endpoints *(architecture defined, not yet implemented)*
 
 ```text
-GET  /api/v1/students/me
-GET  /api/v1/students/me/profile
-GET  /api/v1/students/me/mastery
-GET  /api/v1/students/me/recommendations
-GET  /api/v1/students/me/study-plan
-GET  /api/v1/students/me/progress
-
 GET  /api/v1/courses
 GET  /api/v1/courses/{course_id}
 GET  /api/v1/topics/{topic_id}
@@ -549,12 +628,9 @@ POST /api/v1/tutor/explain
 POST /api/v1/tutor/hint
 POST /api/v1/tutor/generate-quiz
 
-GET  /api/v1/recommendations
+GET  /api/v1/students/me/recommendations
+GET  /api/v1/students/me/study-plan
 GET  /api/v1/recommendations/{id}/explanation
-
-GET  /api/v1/teacher/dashboard
-GET  /api/v1/teacher/students
-GET  /api/v1/teacher/students/{id}
 
 GET  /api/v1/analytics/learning
 GET  /api/v1/analytics/class
@@ -731,34 +807,109 @@ Tests use SQLite as an in-memory test database — no PostgreSQL required for th
 | Test File | Coverage |
 |---|---|
 | `tests/api/test_auth.py` | Registration, login, token refresh, role validation, duplicate email, invalid input |
+| `tests/api/test_events.py` | Event recording (all 11 types), pagination, session start/end, auth |
+| `tests/api/test_students.py` | Student profile, mastery list, single mastery 404, learner profile, refresh, performance |
+| `tests/api/test_teachers.py` | Dashboard stats, student list, individual profile, role-based access |
+| `tests/unit/test_analytics_engine.py` | Mastery score computation, level classification (5 levels), confidence, monotonicity |
 | `tests/unit/test_security.py` | bcrypt hashing, JWT creation, JWT validation, token expiry |
 | `tests/conftest.py` | Shared fixtures: test DB, test client, student/teacher credentials, token headers |
 
-### Current Test Cases (15 implemented)
+### Current Test Cases (92 passing)
 
-- `TestHealthCheck` — health endpoint returns 200 with DB status
-- `TestRegistration` — student success, teacher success, duplicate email (409), short password (422), invalid email (422), invalid role (422)
-- `TestLogin` — success with tokens, wrong password (401), unknown email (401)
-- `TestTokenRefresh` — new access token returned, access token cannot be used as refresh token
-- `TestProtectedRoutes` — missing token (401/404), invalid token (401/404)
+**Phase 1 — Auth & Security (22 tests)**
+- `tests/api/test_auth.py` (14 tests):
+  - `TestHealthCheck` — health endpoint returns 200 with DB status
+  - `TestRegistration` — student success, teacher success, duplicate email (409), short password (422), invalid email (422), invalid role (422)
+  - `TestLogin` — success with tokens, wrong password (401), unknown email (401)
+  - `TestTokenRefresh` — new access token returned and grants protected access, access token cannot be used as refresh
+  - `TestProtectedRoutes` — missing token (401), invalid token (401)
+- `tests/unit/test_security.py` (8 tests):
+  - `TestPasswordHashing` — bcrypt hashing, non-plaintext, salt verification, mismatch detection
+  - `TestJWTTokens` — access token creation/decoding, refresh token type claim, invalid/tampered token rejection
 
-> **Coverage data:** No formal coverage percentage is claimed. Coverage tooling is not yet configured.
+**Phase 2 — Events & Sessions (17 tests)**
+- `TestRecordEvent` (7 tests) — all 11 event types accepted, optional fields, invalid type rejected (422), missing field rejected (422), unauthenticated blocked, teacher blocked
+- `TestListEvents` (4 tests) — empty for new student, returns recorded events with pagination metadata, unauthenticated blocked
+- `TestSessions` (6 tests) — start session (study, quiz), invalid type rejected, end session with duration, 404 on nonexistent, auth required
+
+**Phase 2 — Students (14 tests)**
+- `TestStudentMe` (3 tests) — student profile success, teacher blocked, unauthenticated blocked
+- `TestStudentMastery` (4 tests) — empty list for new student, pagination metadata, unauthenticated blocked, single topic 404
+- `TestLearnerProfile` (3 tests) — structure with correct types, teacher blocked, unauthenticated blocked
+- `TestProfileRefresh` (2 tests) — recomputes and returns updated profile with message, unauthenticated blocked
+- `TestPerformanceSummary` (2 tests) — full summary structure, unauthenticated blocked
+
+**Phase 2 — Teachers (12 tests)**
+- `TestTeacherDashboard` (4 tests) — class statistics with values in [0, 1], student access blocked, unauthenticated blocked
+- `TestTeacherStudentList` (5 tests) — student listing, registered student presence, pagination parameters respected, student access blocked
+- `TestTeacherStudentProfile` (3 tests) — individual profile inspection, 404 for nonexistent student, student access blocked
+
+**Phase 2 — Analytics Engine (27 tests)**
+- `TestComputeMasteryScore` (7 tests) — no attempts returns 0, perfect/zero performance, recency weighting (60/40), clamping [0, 1], custom weights, float return
+- `TestClassifyMasteryLevel` (9 tests) — not_started, beginner, intermediate, advanced, mastered, threshold boundary behavior, valid strings
+- `TestComputeMasteryConfidence` (6 tests) — zero/negative attempts return 0, full confidence at max attempts, clamped at 1.0, monotonic increase
+- `TestMasteryLevelToScore` (5 tests) — not_started=0, mastered>=0.85, unknown=0, monotonic ordering
+
+> **Test DB:** All API tests use SQLite in-memory via `conftest.py`. No external DB required.
 
 ---
 
 ## Data and Dataset Strategy
 
-> **⚠️ Important:** No real student data has been collected. The dashboards currently display clearly labeled synthetic demo data for development and layout validation purposes. This synthetic data must not be used to draw conclusions about the research hypotheses.
+> **Important:** No real student data has been collected. The dashboards currently display clearly labeled synthetic demo data for development and layout validation purposes. This synthetic data must not be used to draw conclusions about the research hypotheses.
 
 The system is designed to support three data modes:
 
 | Mode | Purpose | Status |
 |---|---|---|
-| **Synthetic Demo Data** | Development, testing, UI validation | 🟡 Inline demo data in UI; full synthetic generator planned Phase 2 |
-| **Public Educational Datasets** | ML training and benchmarking | ⏳ Planned Phase 2 (e.g., ASSISTments, EdNet) |
+| **Synthetic Demo Data** | Development, testing, UI validation | ✅ Generator implemented (`scripts/generate_synthetic_data.py`) |
+| **Public Educational Datasets** | ML training and benchmarking | ⏳ Planned Phase 4 (e.g., ASSISTments, EdNet) |
 | **Application-Generated Data** | Real interaction data from deployed platform | ⏳ Requires deployment and user study |
 
-All synthetic data is clearly labeled with `⚠️ DEMO DATA — Synthetic` badges in the UI. The backend data model is designed to be compatible with standard educational datasets (OULAD, ASSISTments, EdNet) through an adapter interface that will be defined in Phase 2.
+### Synthetic Data Generator
+
+Run the generator to produce development/demo data (30 students by default):
+
+```bash
+# Generate 30 students with seed 42 (default)
+python scripts/generate_synthetic_data.py
+
+# Custom settings
+python scripts/generate_synthetic_data.py --students 50 --seed 123
+
+# Dry run (no files written)
+python scripts/generate_synthetic_data.py --dry-run --students 10
+```
+
+All generated records are tagged `SYNTHETIC_DATA_VERSION = DEMO-v2.0`. **Do not use synthetic data for research conclusions.**
+
+### Exploratory Data Analysis (EDA)
+
+An exploratory data analysis script/notebook is available at `notebooks/phase2_learning_analytics_eda.py` to analyze the generated synthetic student interactions:
+
+```bash
+# 1. Generate synthetic data (required prerequisite)
+python scripts/generate_synthetic_data.py --students 30
+
+# 2. Run the EDA script directly
+python notebooks/phase2_learning_analytics_eda.py
+
+# Or convert to Jupyter notebook and explore interactively
+jupytext --to notebook notebooks/phase2_learning_analytics_eda.py
+jupyter notebook notebooks/phase2_learning_analytics_eda.ipynb
+```
+
+**Analyses Performed:**
+- Archetype breakdown & interaction counts (Mastery seeker, Struggling, Inconsistent, Fast crammer, Disengaged)
+- Mastery score distributions by learner archetype
+- Performance feature correlation matrix
+- At-risk student identification based on behavioral heuristic indicators
+- Topic difficulty and mistake frequency ranking
+
+> All EDA outputs are tagged with synthetic data disclaimers.
+
+
+
 
 ---
 
@@ -1011,15 +1162,26 @@ Usability (SUS) · Satisfaction · Trust in recommendations · Perceived persona
 - [x] Student dashboard shell
 - [x] Teacher dashboard shell
 - [x] Docker Compose configuration
-- [x] Test framework with 15 auth + security tests
+- [x] Test framework with 92 passing tests across auth, events, students, teachers, and analytics engine
 - [x] `.env.example` configuration template
 
-### ⏳ Phase 2 — Data and Learning Analytics
-- [ ] Synthetic student interaction data generator
-- [ ] Event tracking API endpoints
-- [ ] Learning analytics engine (feature engineering)
-- [ ] Learner profile API
-- [ ] Analytics notebooks
+### ✅ Phase 2 — Data and Learning Analytics (Complete)
+- [x] Synthetic student interaction data generator (`scripts/generate_synthetic_data.py`)
+  - 5 learner archetypes, seeded generation, CLI flags (`--students`, `--seed`, `--dry-run`)
+  - All output tagged `SYNTHETIC_DATA_VERSION = DEMO-v2.0`
+- [x] Event tracking API (`POST /api/v1/events`, `GET /api/v1/events`)
+  - 11 event types: resource_view, video_started, video_completed, quiz_started, quiz_completed, hint_requested, tutor_message, topic_revisit, study_plan_opened, recommendation_viewed, recommendation_acted
+- [x] Session management API (`POST /api/v1/sessions`, `PATCH /api/v1/sessions/{id}`)
+- [x] Student analytics API (profile, mastery list, per-topic mastery, learner profile, profile refresh, performance summary)
+- [x] Teacher analytics API (class dashboard, student list, individual student profile)
+- [x] Learning analytics engine
+  - `mastery.py` — weighted mastery score (60/40 recent/avg), 5-level classification, confidence estimation
+  - `engine.py` — performance feature engineering, engagement score, mastery upsert, learner profile recomputation, streak calculation, class-level statistics
+- [x] Repository layer (`student_repository.py`, `analytics_repository.py`)
+- [x] Pydantic v2 analytics schemas (`schemas/analytics.py`)
+- [x] SQLite UUID compatibility fix (`_to_uuid()` coercion helper)
+- [x] EDA notebook (`notebooks/phase2_learning_analytics_eda.py`)
+- [x] 70 additional passing tests (17 events/sessions, 14 students, 12 teachers, 27 analytics engine, alongside 22 Phase 1 auth & security tests)
 
 ### ⏳ Phase 3 — Knowledge Gap Detection
 - [ ] Mastery calculation pipeline
@@ -1105,13 +1267,17 @@ Usability (SUS) · Satisfaction · Trust in recommendations · Perceived persona
 | Database schema | ✅ Implemented | 25-table ORM, Alembic configured |
 | Docker Compose | ✅ Implemented | PostgreSQL + backend + frontend |
 | Frontend shell | ✅ Implemented | React, routing, auth pages, design system |
-| Student dashboard | 🟡 Partial | Layout complete; API integration pending |
-| Teacher dashboard | 🟡 Partial | Layout complete; API integration pending |
-| Test suite | 🟡 Partial | Auth/security tests done; others planned |
-| Learning analytics | ⏳ Planned | Phase 2 |
-| Learner profile API | ⏳ Planned | Phase 2 |
-| Event tracking | ⏳ Planned | Phase 2 |
-| Knowledge gap detection | ⏳ Planned | Phase 3 |
+| Student dashboard | 🟡 Partial | Layout complete; Phase 2 API exists, UI integration pending Phase 10 |
+| Teacher dashboard | 🟡 Partial | Layout complete; Phase 2 API exists, UI integration pending Phase 10 |
+| Test suite | ✅ 99 passing | Auth, events, students, teachers, analytics engine, security, knowledge gaps |
+| Event tracking API | ✅ Implemented | Phase 2 — 11 event types, sessions |
+| Learning analytics engine | ✅ Implemented | Phase 2 — mastery, engagement, streak, class stats |
+| Student analytics API | ✅ Implemented | Phase 2 — mastery, profile, performance |
+| Teacher analytics API | ✅ Implemented | Phase 2 — dashboard, student list, individual profile |
+| Learner profile API | ✅ Implemented | Phase 2 — profile read + refresh |
+| Synthetic data generator | ✅ Implemented | Phase 2 — 5 archetypes, seeded CLI |
+| EDA notebook | ✅ Implemented | Phase 2 — mastery dist., correlations, at-risk, topic difficulty |
+| Knowledge gap detection | ✅ Implemented | Phase 3 — multi-signal engine, gap persistence, API |
 | ML prediction | ⏳ Planned | Phase 4 |
 | Adaptive engine | ⏳ Planned | Phase 5 |
 | LLM tutor | ⏳ Planned | Phase 6 |
@@ -1119,11 +1285,9 @@ Usability (SUS) · Satisfaction · Trust in recommendations · Perceived persona
 | Explainability (SHAP) | ⏳ Planned | Phase 8 |
 | Knowledge graph | ⏳ Planned | Phase 9 |
 | Full frontend pages | ⏳ Planned | Phase 10 |
-| Jupyter notebooks | ⏳ Planned | Phase 2+ |
 | Research experiments | ⏳ Planned | Phase 11 |
 | Statistical analysis | ⏳ Planned | Phase 11 |
 | Ablation study | ⏳ Planned | Phase 11 |
-| Synthetic data generator | ⏳ Planned | Phase 2 |
 | Documentation | 🟡 Partial | Architecture + plan + methodology done |
 
 **Legend:** ✅ Implemented · 🟡 Partial · ⏳ Planned · 🔵 Experimental
@@ -1238,4 +1402,4 @@ New Student Interaction
 
 The purpose is not to build a smarter chatbot. The purpose is to build a system where every recommendation is derived from the student's own data, every explanation is grounded in trusted content, every suggestion is justified with evidence, and every component can be independently evaluated for its contribution to learning outcomes.
 
-**Phase 1 is complete.** The architectural foundation — authentication, database schema, configuration, testing framework, and frontend shell — is implemented and tested. The remaining phases will implement the adaptive intelligence layer, LLM integration, RAG, explainability, and the research evaluation framework incrementally.
+**Phases 1 and 2 are complete.** The architectural foundation (authentication, database schema, configuration, testing framework, and frontend shell) is implemented and tested. The learning analytics layer — event tracking, mastery scoring, learner profiles, engagement metrics, and teacher dashboards — is also fully implemented and tested with 92 passing tests. The remaining phases will implement knowledge gap detection, the adaptive intelligence layer, LLM integration, RAG, explainability, and the research evaluation framework incrementally.

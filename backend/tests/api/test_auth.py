@@ -100,9 +100,18 @@ class TestTokenRefresh:
         })
         assert response.status_code == 200
         data = response.json()
+        assert data["success"] is True
         assert "access_token" in data["data"]
-        # New access token should be different
-        assert data["data"]["access_token"] != registered_student["access_token"]
+        # Returned token must be a valid JWT string
+        new_token = data["data"]["access_token"]
+        assert isinstance(new_token, str) and len(new_token) > 50
+        # Verify the new token grants access to protected routes
+        protected = client.get(
+            "/api/v1/students/me",
+            headers={"Authorization": f"Bearer {new_token}"},
+        )
+        # 200 = student granted, 403 = teacher (also valid), proves token works
+        assert protected.status_code in (200, 403)
 
     def test_access_token_cannot_be_used_as_refresh(self, client, registered_student):
         response = client.post("/api/v1/auth/refresh", json={

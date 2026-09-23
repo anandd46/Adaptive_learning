@@ -2,6 +2,7 @@
 Authentication API endpoints.
 Handles register, login, token refresh, and logout.
 """
+import uuid
 from typing import Annotated
 from datetime import datetime, timezone
 
@@ -129,7 +130,12 @@ def refresh_token(request: RefreshRequest, db: Annotated[Session, Depends(get_db
     if payload.get("type") != "refresh":
         raise UnauthorizedException("Invalid token type — must be a refresh token")
 
-    user = db.query(User).filter(User.id == payload["sub"], User.is_active == True).first()
+    try:
+        user_id = uuid.UUID(payload["sub"])
+    except (ValueError, KeyError):
+        raise UnauthorizedException("Invalid token subject")
+
+    user = db.query(User).filter(User.id == user_id, User.is_active == True).first()
     if not user:
         raise UnauthorizedException("User not found")
 

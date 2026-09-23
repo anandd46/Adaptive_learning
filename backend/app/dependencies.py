@@ -2,6 +2,7 @@
 FastAPI dependency injection functions.
 Provides: database sessions, current authenticated user, role guards.
 """
+import uuid
 from typing import Annotated
 
 from fastapi import Depends, Header
@@ -39,7 +40,11 @@ def get_current_user(
     if payload.get("type") != "access":
         raise UnauthorizedException("Invalid token type")
 
-    user_id: str = payload.get("sub", "")
+    try:
+        user_id = uuid.UUID(payload.get("sub", ""))
+    except (ValueError, AttributeError):
+        raise UnauthorizedException("Invalid token subject")
+
     user = db.query(User).filter(User.id == user_id, User.is_active == True).first()
     if not user:
         raise UnauthorizedException("User not found or deactivated")
