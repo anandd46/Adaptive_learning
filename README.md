@@ -1,4 +1,3 @@
-
 # Explainable AI-Powered Adaptive Learning Platform
 ### Using Learning Analytics and Large Language Models for Personalized Education
 
